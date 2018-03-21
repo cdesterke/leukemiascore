@@ -2,9 +2,9 @@
 R-package which generate a leukemia score for genes known to be Pubmed cited in leukemia field.
 ---
 usage 
-library(leukemiascore)
-set<-c("FLT3","TET2","MSH2")
-leukemia<-leukemiaquery(set)
+>library(leukemiascore)
+>set<-c("FLT3","TET2","MSH2")
+>leukemia<-leukemiaquery(set)
 
 ### Starting the queries for the selected genes.
 
@@ -20,15 +20,15 @@ leukemia<-leukemiaquery(set)
   
   
   > leukemia
-     CitationsGene leukemia
-FLT3          5003     3001
-TET2          1123      488
-MSH2          3890       72
+###     CitationsGene leukemia
+#FLT3          5003     3001
+#TET2          1123      488
+#MSH2          3890       72
 
-leukemiafinal<-leukemiascore(leukemia)
+>leukemiafinal<-leukemiascore(leukemia)
 
 > leukemiafinal
-     CitationsGene leukemia leukemiaScore
-FLT3          5003     3001      59.98401
-TET2          1123      488      43.45503
-MSH2          3890       72       1.85090
+###     CitationsGene leukemia leukemiaScore
+#FLT3          5003     3001      59.98401
+#TET2          1123      488      43.45503
+#MSH2          3890       72       1.85090
