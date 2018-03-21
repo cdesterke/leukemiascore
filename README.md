@@ -3,6 +3,7 @@ R-package which generate a leukemia score for genes known to be Pubmed cited in 
 ---
 usage 
 >library(leukemiascore)
+---
 >set<-c("FLT3","TET2","MSH2")
 >leukemia<-leukemiaquery(set)
 
@@ -19,16 +20,10 @@ usage
 	Number of papers found in PubMed for MSH2 was: 3890 
   
   
-  > leukemia
-###     CitationsGene leukemia
-#FLT3          5003     3001
-#TET2          1123      488
-#MSH2          3890       72
+> leukemia
+
 
 >leukemiafinal<-leukemiascore(leukemia)
 
 > leukemiafinal
-###     CitationsGene leukemia leukemiaScore
-#FLT3          5003     3001      59.98401
-#TET2          1123      488      43.45503
-#MSH2          3890       72       1.85090
+
