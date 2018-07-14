@@ -5,6 +5,7 @@ usage
 >library(leukemiascore)
 ---
 >set<-c("FLT3","TET2","MSH2")
+---
 >leukemia<-leukemiaquery(set)
 
 ### Starting the queries for the selected genes.
